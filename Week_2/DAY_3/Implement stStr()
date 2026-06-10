@@ -1,0 +1,14 @@
+class Solution {
+public:
+    int strStr(string haystack, string needle) {
+        // Find the first occurrence of needle in haystack
+        size_t found = haystack.find(needle);
+        
+        // If not found, string::find returns string::npos
+        if (found != string::npos) {
+            return found;
+        }
+        
+        return -1;
+    }
+};
